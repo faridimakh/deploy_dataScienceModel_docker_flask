@@ -3,7 +3,7 @@
 
 1-install docker and docker-compose in your computer
 
-2- pull th project (**web repository and docker-compose.xml must be in the same**)
+2- pull th project (**web repository and docker-compose.xml file  must be in the same directory**)
 
 3- run the docker commands: ***docker-compos build***, ***docker-compose up -d***
 
