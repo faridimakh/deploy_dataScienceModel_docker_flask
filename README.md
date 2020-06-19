@@ -1,7 +1,7 @@
 # deploy_dataScienceModel_docker_flask
 ## how to use the project :
 
-1-install docker and docker-compose in your computer(google)
+1-install docker and docker-compose in your computer (google)
 
 2- pull th project (**web repository and docker-compose.xml file  must be in the same directory**)
 
