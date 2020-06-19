@@ -7,4 +7,4 @@
 
 3- run the docker commands: ***docker-compos build***, ***docker-compose up -d***
 
-4-take your predictions and filter ur spams in localhost:5000 
+4-take your predictions and filter ur spams from url ***127.0.0.1:5000*** (or from another sever wich can ping your IP adress) 
