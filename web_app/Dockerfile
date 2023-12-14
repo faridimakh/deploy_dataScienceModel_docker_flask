@@ -1,19 +1,15 @@
-FROM python:3.5-slim
+FROM python:3.8-slim
 WORKDIR /app
 ADD . /app
-
+RUN python -m pip install --upgrade pip
 RUN pip install flask
-RUN pip install numpy>=1.9.2
-
-RUN pip install scikit-learn>=0.18
-
-RUN pip install pandas>=0.19
-
-
+RUN pip install numpy
+RUN pip install scikit-learn
+RUN pip install pandas
+RUN pip install torch
+RUN pip install scikit-learn joblib
 EXPOSE 5000
-
 ENV NAME Opentoall
-
 CMD ["python","app.py"]
 
 

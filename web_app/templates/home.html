@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<title>Docker Flask </title>
-	</head>
+    <title>Docker Flask </title>
+</head>
 
-	<body>
-		<h1><div style="text-align:centre"><font color='blue'>simple deploying predictif model using Flask </font></div></h1>
-		<hr>
-		</br>	
+<body>
+<!-- Logo Integration -->
+<div style="text-align:center; margin-top: 10px;">
+    <img src="logo.png" alt="Logo" style="width:300px; height:auto;">
+</div>
 
-		<h2><div style="text-align:centre">Enter the values </div></h2>
+<h1>
+    <div style="text-align:center"><font color='blue'>Simple deployment of the model</font></div>
+    <div style="text-align:center;font-size: smaller;"><font color='green'>Autor:   Farid IMAKHLOUFEN</font></div>
 
-		</br>
+</h1>
+<hr>
+<h1>
+    <div style="text-align:centre"><font color='blue'>coil presure prediction</font></div>
+</h1>
+<hr>
+</br>
 
-		<div class='container'>
-			<div class='row'>
-				<div class='col-6'>
-					<form method="POST" action="/predict">
-						<div class='form-group'>
-							<label for="var_1"><p class="font-weight-bold">var_1</p></label>
-							<input type='text' name="var_1">
-							</div>
+<h2>
+    <div style="text-align:centre">Please enter the following telemetry value data and submit: </div>
+</h2>
 
-							<div class='form-group'>
-								<label for="var_2"><p class="font-weight-bold">var_2</p></label>
-								<input type='text' name="var_2">
-								
-								</div>
-								<div class='form-group'>
-									<label for="var_3"><p class="font-weight-bold">var_3</p></label>
-									<input type='text' name="var_3">
-									
-									</div>
-									<div class='form-group'>
-										<label for="var_4"><p class="font-weight-bold">var_4</p></label>
-										<input type='text' name="var_4">
-										
-										</div>
-										<div class='form-group'>
-											<label for="var_5"><p class="font-weight-bold">var_5</p></label>
-											<input type='text' name="var_5">
-											
-											</div>
+</br>
 
-											<input class='btn btn-primary' type='submit' value='Submit'>
+<div class='container'>
+    <div class='row'>
+        <div class='col-6'>
+            <form method="POST" action="/predict">
+                <div class='form-group'>
+                    <label for="var_1"><p class="font-weight-bold">C2/MIX4/Liq4_Add1_Final</p></label>
+                    <input type='text' name="var_1">
+                </div>
 
-						</form>
-					</div>
-					</div>
-					</div>	
-		
-	</body>
+                <div class='form-group'>
+                    <label for="var_2"><p class="font-weight-bold">C2/MIX4/Liq4_Water_Final</p></label>
+                    <input type='text' name="var_2">
+
+                </div>
+                <div class='form-group'>
+                    <label for="var_3"><p class="font-weight-bold">C2/MIX4/Mix4_DryMixTimer</p></label>
+                    <input type='text' name="var_3">
+
+                </div>
+                <div class='form-group'>
+                    <label for="var_4"><p class="font-weight-bold">C2/MIX4/Mix4_FinalMixTimer</p></label>
+                    <input type='text' name="var_4">
+
+                </div>
+                <div class='form-group'>
+                    <label for="var_5"><p class="font-weight-bold">C2/MIX4/Mix4_MotorAmperage</p></label>
+                    <input type='text' name="var_5">
+
+                </div>
+                <div class='form-group'>
+                    <label for="var_6"><p class="font-weight-bold">C2/MIX4/Mix4_WetMixTimer</p></label>
+                    <input type='text' name="var_6">
+
+                </div>
+                <div class='form-group'>
+                    <label for="var_7"><p class="font-weight-bold">Compounding/C2/MIX4/Mixing_RuuviTag/Humidity</p></label>
+                    <input type='text' name="var_7">
+
+                </div>
+
+                <div class='form-group'>
+                    <label for="var_8"><p class="font-weight-bold">C2/MIX4/Mixing_RuuviTag/Temperature</p></label>
+                    <input type='text' name="var_8">
+
+                </div>
+                <div class="form-group text-right">
+                <input class='btn btn-primary btn-lg' type='Submit' value='Submit' style="padding: 15px 30px; font-size: 50px;">
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
