@@ -28,6 +28,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
